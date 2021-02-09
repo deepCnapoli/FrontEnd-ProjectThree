@@ -1,0 +1,181 @@
+/*file: styles.css*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  background-image: url('/img/Procida-Ischa-1600x1000.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+input.search-zip {
+    width: 250px;
+    border: none;
+    outline: none;
+    padding: 0.8em 1em;
+    border-radius: 20px;
+    background: #7C7C7C2B;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #DF8E00;
+  
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  width: 80px;
+  color:#6F6E6E;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 12px;
+  position:relative;left:-150px;top:2px;background-color:#7C7C7C2B;
+}
+
+.userComment {
+    width: 320px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 0.8em 1em;
+    border-radius: 20px;
+    background: #7C7C7C2B;
+    text-decoration-color: white;
+   /* color: white;*/
+    font-size: 1em;
+    font: inherit;
+}
+
+.weatherDisp {
+    padding: 10px;
+}
+
+.searchArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  /*  border: 5px outset blue;*/
+  background-color: deepskyblue;    
+  text-align: center;
+  opacity: 100%; 
+}
+
+input.search-zip {
+    width: 125px;
+    border: none;
+    outline: none;
+    padding: 0.8em 1em;
+    border-radius: 20px;
+    background: #7C7C7C2B;
+    color:#6F6E6E;
+    font-size: 1em;
+}
+
+.location .city {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #FFF;
+  font-size: 16px;
+}
+
+.country {
+  color: #FFF;
+  font-size: 1.5em;
+}
+
+.current {
+  border: 5px outset blue;
+  background-color: deepskyblue;    
+  text-align: center;
+  opacity: 60%; 
+  color: #FFFFFF;
+  font-size: 0.9em;
+  /*       Top Right Bottom Left*/
+  padding: 5px 10px 15px   10px;
+}
+        
+.current .temperature {
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temperature span {
+  font-weight: 500;
+}
+
+.current .weatherDisp {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
